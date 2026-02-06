@@ -178,3 +178,18 @@ body {
     0% { transform: translateY(0) rotate(0deg); }
     100% { transform: translateY(110vh) rotate(360deg); }
 }
+
+.cake-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.cat-video {
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+  pointer-events: none;
+}

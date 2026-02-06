@@ -1,11 +1,11 @@
 // script.js
 
-// Wait until the page and animations are done
+// tempo de espera pra página abrir
 window.addEventListener('load', () => {
-    // Delay the confetti start until the cake/candle animations are finished
+    // deley do confete e da vela
     setTimeout(() => {
         startConfetti();
-    }, 5000); // Adjust delay if animations are longer
+    }, 5000); // ajuste da da animação 
 });
 
 function startConfetti() {
@@ -25,11 +25,11 @@ function startConfetti() {
 
     const colors = ['#f2d74e', '#95c3de', '#ff9a91', '#a4ffc4', '#ffffff'];
 
-    // Create hundreds of confetti dots
+    // fazendo os confetes aparecerem
     for (let i = 0; i < 200; i++) {
         const dot = document.createElement('div');
         const size = Math.random() * 8 + 4;
-        const delay = Math.random() * 5; // stagger start
+        const delay = Math.random() * 5; // gatilho de inicar
         dot.style.cssText = `
             position: absolute;
             width: ${size}px;
@@ -45,7 +45,7 @@ function startConfetti() {
         container.appendChild(dot);
     }
 
-    // Add CSS for the fall animation dynamically
+    // add css para dar a sensação de queda dos confetes
     const style = document.createElement('style');
     style.innerHTML = `
         @keyframes confettiFall {

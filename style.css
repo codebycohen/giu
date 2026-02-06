@@ -201,29 +201,35 @@ body {
   pointer-events: none;
 }
 
-/* ===== RESPONSIVO CELULAR ===== */
+.cat-video {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 @media (max-width: 600px) {
 
   .cake-wrapper {
-    flex-direction: column; /* empilha ao invés de lado a lado */
-    gap: 10px;
-    margin-top: 30px;
+    flex-direction: row; /*  mantém lado a lado */
+    gap: 8px;
+    margin-top: 40px;
   }
 
   #cake {
-    width: 150px; /* bolo menor */
+    width: 130px;
     height: auto;
   }
 
   .cat-video {
-    width: 90px; /* gatinhos menores */
+    width: 70px;
   }
 
   .text h1 {
-    font-size: 1.8rem; /* texto menor */
+    font-size: 1.6rem;
+    padding: 0 10px;
   }
 
-  .candle {
-    transform: translateY(-220px); /* ajusta altura da vela */
-  }
 }

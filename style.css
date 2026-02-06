@@ -147,13 +147,13 @@ body {
   }
 }
 .text {
-  margin-top: 25px;           /* space below cake */
+  margin-top: 25px;           
   text-align: center;
 }
 
 .text h1 {
   font-family: 'Brush Script MT', cursive;
-  font-size: 3rem;            /* 🔥 CHANGE SIZE HERE */
+  font-size: 3rem;           
   color: red;
   white-space: nowrap;
   overflow: hidden;
@@ -191,7 +191,7 @@ body {
   gap: 25px;
   margin-top: 60px;
 
-  position: relative; /* ⭐ ESSA LINHA CONSERTA */
+  position: relative;
 }
 
 .cat-video {
@@ -199,4 +199,31 @@ body {
   height: auto;
   border-radius: 15px;
   pointer-events: none;
+}
+
+/* ===== RESPONSIVO CELULAR ===== */
+@media (max-width: 600px) {
+
+  .cake-wrapper {
+    flex-direction: column; /* empilha ao invés de lado a lado */
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  #cake {
+    width: 150px; /* bolo menor */
+    height: auto;
+  }
+
+  .cat-video {
+    width: 90px; /* gatinhos menores */
+  }
+
+  .text h1 {
+    font-size: 1.8rem; /* texto menor */
+  }
+
+  .candle {
+    transform: translateY(-220px); /* ajusta altura da vela */
+  }
 }

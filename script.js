@@ -61,3 +61,11 @@ function startConfetti() {
     `;
     document.head.appendChild(style);
 }
+
+
+const music = document.getElementById("bg-music");
+
+// toca na primeira interação do usuário 
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
